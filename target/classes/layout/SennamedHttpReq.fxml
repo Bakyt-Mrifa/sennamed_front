@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="643.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.LoginCtrl">
+   <children>
+      <AnchorPane layoutX="362.0" prefHeight="360.0" prefWidth="281.0" style="-fx-background-color: #057F56;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="361.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtLogin" layoutX="40.0" layoutY="121.0" prefHeight="25.0" prefWidth="204.0" promptText="Введите логин" />
+            <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="196.0" prefHeight="25.0" prefWidth="204.0" promptText="Введите пароль" />
+            <Label layoutX="37.0" layoutY="97.0" text="Login" />
+            <Label layoutX="40.0" layoutY="172.0" text="Password" />
+            <Button fx:id="btnLogin" layoutX="40.0" layoutY="256.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Ok" textFill="#359042" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="40.0" layoutY="297.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="30.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Cancel" textFill="#359042" wrapText="true" />
+            <Label layoutX="107.0" layoutY="42.0" text="Sign In" textFill="#f5f0f0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgViewLogo" fitHeight="367.0" fitWidth="454.0" layoutX="-5.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../layout.img/sennamedLogo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
