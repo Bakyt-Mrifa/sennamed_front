@@ -7,6 +7,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import kg.sennamed.sennamedFront.models.User;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -32,10 +33,21 @@ public class LoginCtrl {
    @FXML
     void onBtnCliced(ActionEvent event) {
        if (event.getSource().equals(btnLogin)) {
-           System.out.println("login clicked");
+           onLoginButton();
        } else if (event.getSource().equals(btnCancel)) {
-           System.out.println("Cancel button clicked");
+           noCancelClicked();
        }
    }
+
+    private void onLoginButton() {
+       User user = new User();
+       user.setUserName(txtLogin.getText());
+       user.setUserPassword(txtPassword.getText());
+
+    }
+
+    private void noCancelClicked() {
+       System.exit(0);
+    }
 
 }
