@@ -8,5 +8,5 @@ import java.io.IOException;
 public interface LoginHttpRequest {
 
         LoginHttpRequest INSTANCE=new LoginHttpRequestImpl();
-    User getUser (User user) throws IOException;
+    User getUserByLogin (String login) throws IOException;
 }

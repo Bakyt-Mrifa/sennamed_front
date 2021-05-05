@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 @Data
 @Entity
 public class User {
+    private Long id;
     private String userName;
     private String userPassword;
     private boolean isActive;

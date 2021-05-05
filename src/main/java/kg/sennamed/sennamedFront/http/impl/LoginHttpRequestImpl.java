@@ -13,8 +13,9 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
     private OkHttpClient okHttpClient=new OkHttpClient();
 
     @Override
-    public User getUser(User user) throws IOException {
-        RequestBody requestBody=RequestBody.create(MediaType.parse("application/json"), om.writeValueAsString(user));
+    public User getUserByLogin(String login) throws IOException {
+        User user=new User();
+        RequestBody requestBody=RequestBody.create(MediaType.parse("application/json"), om.writeValueAsString(login));
 
         Request request=new Request.Builder()
                 .addHeader("Content-Type", "application/json")
@@ -28,11 +29,11 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
 
         if (response.isSuccessful()) {
             user=om.readValue(response.body().string(), User.class);
-            System.out.println("После метода saveLot: "+user);
+            System.out.println("User: "+user);
         }else {
             System.out.println("Произошла системная ошибка!");
         }
-        return lot;
+        return user;
     }
 }
 /*

@@ -12,7 +12,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/layout/SennamedHttpReq.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/layout/AuthForm.fxml"));
+       // Parent root = FXMLLoader.load(getClass().getResource("/layout/MainForm.fxml"));
         primaryStage.setTitle("SennaMed Login Form");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
