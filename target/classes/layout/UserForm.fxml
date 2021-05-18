@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.UserFormCtrl">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="mnItemClose" mnemonicParsing="false" text="Закрыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="mnItemAdd" mnemonicParsing="false" onAction="#onMnItemClicked" text="Добавить" />
+                  <MenuItem fx:id="mnItemEdit" mnemonicParsing="false" onAction="#onMnItemClicked" text="Редактировать" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Справочники">
+            <items>
+              <MenuItem fx:id="mnItemDict" mnemonicParsing="false" onAction="#onMnItemClicked" text="Позиции" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tbUsers" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colmId" prefWidth="75.0" text="user_id" visible="false" />
+          <TableColumn fx:id="colmName" prefWidth="75.0" text="ФИО" />
+            <TableColumn fx:id="colmLogin" prefWidth="75.0" text="Логин" />
+            <TableColumn fx:id="colmPwd" prefWidth="75.0" text="Пароль" visible="false" />
+            <TableColumn fx:id="colmActive" prefWidth="75.0" text="Active" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

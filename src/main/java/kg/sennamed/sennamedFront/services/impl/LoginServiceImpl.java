@@ -9,7 +9,7 @@ import java.io.IOException;
 public class LoginServiceImpl implements LoginService {
     @Override
     public boolean login(String login, String password) throws IOException {
-        if (login.length()<3 || password.length()<3){
+/*        if (login.length()<3 || password.length()<3){
             return false;
         }
         User user=LoginHttpRequest.INSTANCE.getUserByLogin(login);
@@ -18,7 +18,7 @@ public class LoginServiceImpl implements LoginService {
         }
         if (user.getId()!=null && user.getUserPassword().equals(password)) {
             return true;
-        }
+        }*/
 
         return false;
     }

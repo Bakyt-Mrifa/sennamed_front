@@ -3,42 +3,29 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.MainFormCtrl">
-   <top>
-      <MenuBar BorderPane.alignment="CENTER">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutY="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="mnItemClose" mnemonicParsing="false" text="Закрыть" />
+              <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-                  <MenuItem fx:id="mnItemAdd" mnemonicParsing="false" onAction="#onMnItemClicked" text="Добавить" />
-                  <MenuItem fx:id="mnItemEdit" mnemonicParsing="false" onAction="#onMnItemClicked" text="Редактировать" />
+              <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Справочники">
+          <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem fx:id="mnItemDict" mnemonicParsing="false" onAction="#onMnItemClicked" text="Позиции" />
+              <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-   </top>
-   <center>
-      <TableView fx:id="tbUsers" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn fx:id="colmId" prefWidth="75.0" text="user_id" visible="false" />
-          <TableColumn fx:id="colmName" prefWidth="75.0" text="ФИО" />
-            <TableColumn fx:id="colmLogin" prefWidth="75.0" text="Логин" />
-            <TableColumn fx:id="colmPwd" prefWidth="75.0" text="Пароль" visible="false" />
-            <TableColumn fx:id="colmActive" prefWidth="75.0" text="Active" />
-        </columns>
-      </TableView>
-   </center>
-</BorderPane>
+   </children>
+</Pane>

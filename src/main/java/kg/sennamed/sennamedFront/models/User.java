@@ -2,14 +2,14 @@ package kg.sennamed.sennamedFront.models;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-
 @Data
-@Entity
 public class User {
     private Long id;
-    private String userName;
-    private String userPassword;
-    private boolean isActive;
+
+
+    private String name;
+    private String address;
+    private Account account;
+    //private Position position;
     private Role role;
 }

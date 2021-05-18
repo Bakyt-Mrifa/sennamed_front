@@ -1,21 +1,26 @@
 package kg.sennamed.sennamedFront.http.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import com.squareup.okhttp.*;
 import kg.sennamed.sennamedFront.http.LoginHttpRequest;
+import kg.sennamed.sennamedFront.models.Account;
+import kg.sennamed.sennamedFront.models.Result;
 import kg.sennamed.sennamedFront.models.User;
 
 import java.io.IOException;
 
 public class LoginHttpRequestImpl implements LoginHttpRequest {
 
-    private ObjectMapper om=new ObjectMapper();
-    private OkHttpClient okHttpClient=new OkHttpClient();
+    private ObjectMapper om = new ObjectMapper();
+    private OkHttpClient okHttpClient = new OkHttpClient();
 
     @Override
-    public User getUserByLogin(String login) throws IOException {
+    public User getUser(String login, String password) throws IOException {
+/*
         User user=new User();
-        RequestBody requestBody=RequestBody.create(MediaType.parse("application/json"), om.writeValueAsString(login));
+
+        RequestBody requestBody=RequestBody.create(MediaType.parse("application/json"), login);
 
         Request request=new Request.Builder()
                 .addHeader("Content-Type", "application/json")
@@ -28,27 +33,46 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
         System.out.println("Код запроса: "+code+" - Успешно!!!");
 
         if (response.isSuccessful()) {
+            //Open new scene --------------
             user=om.readValue(response.body().string(), User.class);
             System.out.println("User: "+user);
+        }else {
+            System.out.println("Произошла системная ошибка!");
+        }*/
+        return null;
+    }
+
+    @Override
+    public User getUserObject(Account account) throws IOException {
+
+        User user = new User();
+
+        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"), om.writeValueAsString(account));
+
+        Request request = new Request.Builder()
+                .addHeader("Content-Type", "application/json")
+                .url("http://localhost:8088/api/v1/login/getAccount")
+                .post(requestBody)
+                .build();
+
+
+        Response response = okHttpClient.newCall(request).execute();
+        int code = response.code();
+        System.out.println("Код запроса: " + code + " - Успешно!!!" + response);
+
+
+
+
+        if (response.isSuccessful()) {
+            //Open new scene --------------
+            Result result=om.readValue(response.body().string(), Result.class);
+            System.out.println(result);
+            user = result.getObject();
+            System.out.println(user + "userrrr");
         }else {
             System.out.println("Произошла системная ошибка!");
         }
         return user;
     }
 }
-/*
-        Request request=new Request.Builder()
-                .addHeader("Content-Type", "application/json")
-                .url(httpGetServer+"?id="+id)
-                .build();
-        System.out.println("URL: "+httpGetServer+"?id="+id);
-        Response response=okHttpClient.newCall(request).execute();
-        int code=response.code();
-        System.out.println("Код запроса: "+code+" - Успешно");
-        if (response.isSuccessful()){
-            lot=om.readValue(response.body().string(), Lot.class);
-        }else {
-            System.out.println("Произошла системная ошибка!");
-        }
-        return lot;
-*/
+
