@@ -10,6 +10,6 @@ public class User {
     private String name;
     private String address;
     private Account account;
-    //private Position position;
+    private Position position;
     private Role role;
 }

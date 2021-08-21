@@ -3,6 +3,7 @@ package kg.sennamed.sennamedFront.http.impl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.squareup.okhttp.*;
+import javafx.scene.control.Alert;
 import kg.sennamed.sennamedFront.http.LoginHttpRequest;
 import kg.sennamed.sennamedFront.models.Account;
 import kg.sennamed.sennamedFront.models.Result;
@@ -68,6 +69,13 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
             Result result=om.readValue(response.body().string(), Result.class);
             System.out.println(result);
             user = result.getObject();
+            if (result.getObject()==null){
+                Alert message=new Alert(Alert.AlertType.ERROR);
+                message.setHeaderText("Ошибка авторизации");
+                message.setContentText(result.getMessage());
+                message.showAndWait();
+
+            }
             System.out.println(user + "userrrr");
         }else {
             System.out.println("Произошла системная ошибка!");

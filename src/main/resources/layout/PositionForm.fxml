@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.UserFormCtrl">
+   <center>
+      <TableView fx:id="tbUsers" prefHeight="490.0" prefWidth="760.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colmName" prefWidth="35.0" text="№" />
+            <TableColumn fx:id="colmName1" prefWidth="238.0" text="Должность" />
+            <TableColumn fx:id="colmName11" prefWidth="238.0" text="Специальность" />
+            <TableColumn fx:id="colmActive" prefWidth="127.0" text="Роль" />
+            <TableColumn fx:id="colmActive1" prefWidth="103.0" text="Активность" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ButtonBar cache="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button mnemonicParsing="false" text="удалить" />
+            <Button mnemonicParsing="false" snapToPixel="false" text="Изменить" />
+            <Button mnemonicParsing="false" text="Добавить" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

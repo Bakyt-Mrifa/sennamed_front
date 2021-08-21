@@ -17,12 +17,12 @@
             <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="196.0" prefHeight="25.0" prefWidth="204.0" promptText="Введите пароль" />
             <Label layoutX="37.0" layoutY="97.0" text="Login" />
             <Label layoutX="40.0" layoutY="172.0" text="Password" />
-            <Button fx:id="btnLogin" layoutX="40.0" layoutY="256.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Ok" textFill="#359042" wrapText="true">
+            <Button fx:id="btnLogin" defaultButton="true" layoutX="40.0" layoutY="256.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Ok" textFill="#359042" wrapText="true">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnCancel" layoutX="40.0" layoutY="297.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="30.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Cancel" textFill="#359042" wrapText="true" />
+            <Button fx:id="btnCancel" cancelButton="true" layoutX="40.0" layoutY="297.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="30.0" prefWidth="204.0" style="-fx-background-color: #012A1C;" text="Cancel" textFill="#359042" wrapText="true" />
             <Label layoutX="107.0" layoutY="42.0" text="Sign In" textFill="#f5f0f0">
                <font>
                   <Font size="22.0" />
