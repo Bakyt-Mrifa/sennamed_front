@@ -8,16 +8,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.UserFormCtrl">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.UserFormCtrl">
    <center>
       <TableView fx:id="tbUsers" prefHeight="490.0" prefWidth="760.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="colmId" prefWidth="75.0" text="user_id" visible="false" />
-          <TableColumn fx:id="colmName" prefWidth="327.0" text="ФИО" />
-            <TableColumn fx:id="colmName1" prefWidth="173.0" text="Должность" />
-            <TableColumn fx:id="colmLogin" minWidth="0.0" prefWidth="152.0" text="Логин" />
-            <TableColumn fx:id="colmActive" prefWidth="133.0" text="Роль" />
-            <TableColumn fx:id="colmActive1" prefWidth="104.0" text="Активность" />
+          <TableColumn fx:id="colmName" prefWidth="35.0" text="№" />
+            <TableColumn fx:id="colmName1" prefWidth="238.0" text="Должность" />
+            <TableColumn fx:id="colmName11" prefWidth="238.0" text="Специальность" />
+            <TableColumn fx:id="colmActive" prefWidth="127.0" text="Роль" />
+            <TableColumn fx:id="colmActive1" prefWidth="103.0" text="Активность" />
         </columns>
       </TableView>
    </center>

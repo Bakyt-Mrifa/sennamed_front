@@ -6,10 +6,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.AdminFormCtrl">
    <children>
-      <ComboBox layoutX="14.0" layoutY="62.0" prefHeight="44.0" prefWidth="399.0" promptText="Выберите справочник" />
-      <Button layoutX="435.0" layoutY="62.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="168.0" text="Перейти">
+      <ComboBox fx:id="cmbxDic" layoutX="14.0" layoutY="62.0" prefHeight="44.0" prefWidth="399.0" promptText="Выберите справочник" />
+      <Button fx:id="btnGo" defaultButton="true" layoutX="435.0" layoutY="62.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="44.0" prefWidth="168.0" text="Перейти">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

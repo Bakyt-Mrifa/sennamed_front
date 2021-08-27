@@ -1,5 +1,6 @@
 package kg.sennamed.sennamedFront.models;
 
+import kg.sennamed.sennamedFront.models.enums.Role;
 import lombok.Data;
 
 @Data

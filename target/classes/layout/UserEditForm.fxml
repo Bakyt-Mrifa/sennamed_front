@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="423.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layout.CustomerEditForm">
+   <children>
+      <TextField layoutX="132.0" layoutY="69.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите ФИО клиента" />
+      <Label layoutX="14.0" layoutY="79.0" text="ФИО клиента:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="12.0" text="Форма клиента">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="132.0" layoutY="127.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите адрес клиента" />
+      <Label layoutX="14.0" layoutY="137.0" text="Адрес клиента:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="132.0" layoutY="186.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите примечание" />
+      <Label layoutX="14.0" layoutY="196.0" text="Примечание:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="136.0" layoutY="250.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите номер телефона" />
+      <Label layoutX="18.0" layoutY="260.0" text="Телефон 1:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="136.0" layoutY="309.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите номер телефона" />
+      <Label layoutX="18.0" layoutY="319.0" text="Телефон 2:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="136.0" layoutY="367.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите номер телефона" />
+      <Label layoutX="18.0" layoutY="377.0" text="Телефон 3:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="449.0" layoutY="69.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите логин" />
+      <Label layoutX="389.0" layoutY="79.0" text="Логин:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="449.0" layoutY="127.0" prefHeight="41.0" prefWidth="213.0" promptText="Введите пароль" />
+      <Label layoutX="389.0" layoutY="137.0" text="Пароль:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="389.0" layoutY="225.0" prefHeight="41.0" prefWidth="273.0" />
+      <Label layoutX="389.0" layoutY="189.0" text="Должность:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="389.0" layoutY="301.0" mnemonicParsing="false" text="Активен">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Button defaultButton="true" layoutX="389.0" layoutY="367.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="133.0" text="Сохранить" />
+      <Button cancelButton="true" layoutX="536.0" layoutY="366.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="126.0" text="Отмена" />
+   </children>
+</AnchorPane>

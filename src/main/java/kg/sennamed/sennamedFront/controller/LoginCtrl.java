@@ -2,22 +2,22 @@ package kg.sennamed.sennamedFront.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 import kg.sennamed.sennamedFront.http.LoginHttpRequest;
 import kg.sennamed.sennamedFront.models.Account;
-import kg.sennamed.sennamedFront.models.Role;
 import kg.sennamed.sennamedFront.models.User;
+import kg.sennamed.sennamedFront.models.enums.Role;
+import kg.sennamed.sennamedFront.services.StageService;
 
 import java.io.IOException;
 
 public class LoginCtrl {
+    private StageService stageService = new StageService();
+    private User user = new User();
+    private String path;
 
     @FXML
     private TextField txtLogin;
@@ -50,35 +50,23 @@ public class LoginCtrl {
         account.setLogin(txtLogin.getText().trim());
         account.setPassword(txtPassword.getText().trim());
         System.out.println(account);
-        User user = LoginHttpRequest.INSTANCE.getUserObject(account);
+        user = LoginHttpRequest.INSTANCE.getUserObject(account);
         System.out.println(user + " User!");
 
 
         if (user.getRole().equals(Role.admin)) {
-            String path = "/layout/AdminForm.fxml";
+            path = "/layout/AdminForm.fxml";
             System.out.println("Вы администратор!"); //тест
             btnLogin.getScene().getWindow().hide();
-            showForm(user.getName(), path);
+            stageService.showForm("SennaMed :: Пользователь  - " + user.getName(), path);
         }
 
         if (user.getRole().equals(Role.operator)) {
-            String path = "/layout/CustomerManagementForm.fxml";
+            path = "/layout/CustomerManagementForm.fxml";
             System.out.println("Вы оператор!");
             btnLogin.getScene().getWindow().hide();
-            showForm(user.getName(), path);
+            stageService.showForm("SennaMed :: Пользователь  - " + user.getName(), path);
 
-        }
-    }
-
-    private void showForm(String userName, String path) { // /layout/MainForm.fxml
-        Stage stage = new Stage();
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource(path));
-            stage.setScene(new Scene(root));
-            stage.setTitle("SennaMed :: Пользователь  - " + userName);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 

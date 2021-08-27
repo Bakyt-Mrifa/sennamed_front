@@ -6,21 +6,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.sennamed.sennamedFront.controller.AdminFormCtrl">
    <children>
-      <ComboBox layoutX="14.0" layoutY="62.0" prefHeight="44.0" prefWidth="274.0" promptText="Выберите справочник" />
-      <Button layoutX="302.0" layoutY="62.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="168.0" text="Перейти">
+      <ComboBox fx:id="cmbxDic" layoutX="14.0" layoutY="62.0" prefHeight="44.0" prefWidth="399.0" promptText="Выберите справочник" />
+      <Button fx:id="btnGo" defaultButton="true" layoutX="435.0" layoutY="62.0" mnemonicParsing="false" onAction="#onBtnCliced" prefHeight="44.0" prefWidth="168.0" text="Перейти">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="180.0" layoutY="14.0" prefHeight="28.0" prefWidth="130.0" text="Справочники" underline="true">
+      <Label layoutX="250.0" layoutY="14.0" prefHeight="28.0" prefWidth="130.0" text="Справочники" underline="true">
          <font>
             <Font name="Comic Sans MS Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="123.0" prefHeight="142.0" prefWidth="457.0" wrapText="true">
+      <Label layoutX="13.0" layoutY="123.0" prefHeight="142.0" prefWidth="590.0" wrapText="true">
          <font>
             <Font name="Calibri" size="18.0" />
          </font>
