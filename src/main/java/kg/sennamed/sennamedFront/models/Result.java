@@ -6,5 +6,6 @@ import lombok.Data;
 public class Result {
     private int status;
     private String message;
-    private User object;
+    private String type;
+    private Object object;
 }

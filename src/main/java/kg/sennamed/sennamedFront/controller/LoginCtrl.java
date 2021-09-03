@@ -58,7 +58,7 @@ public class LoginCtrl {
             path = "/layout/AdminForm.fxml";
             System.out.println("Вы администратор!"); //тест
             btnLogin.getScene().getWindow().hide();
-            stageService.showForm("SennaMed :: Пользователь  - " + user.getName(), path);
+            stageService.showAdminForm("SennaMed :: Пользователь  - " + user.getName(), path);
         }
 
         if (user.getRole().equals(Role.operator)) {

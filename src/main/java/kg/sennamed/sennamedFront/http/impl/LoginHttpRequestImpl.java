@@ -2,6 +2,7 @@ package kg.sennamed.sennamedFront.http.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.squareup.okhttp.*;
 import javafx.scene.control.Alert;
 import kg.sennamed.sennamedFront.http.LoginHttpRequest;
@@ -12,7 +13,7 @@ import kg.sennamed.sennamedFront.models.User;
 import java.io.IOException;
 
 public class LoginHttpRequestImpl implements LoginHttpRequest {
-
+    Gson gson = new Gson();
     private ObjectMapper om = new ObjectMapper();
     private OkHttpClient okHttpClient = new OkHttpClient();
 
@@ -45,7 +46,6 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
 
     @Override
     public User getUserObject(Account account) throws IOException {
-
         User user = new User();
 
         RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"), om.writeValueAsString(account));
@@ -62,25 +62,25 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
         System.out.println("Код запроса: " + code + " - Успешно!!!" + response);
 
 
-
-
         if (response.isSuccessful()) {
             //Open new scene --------------
-            Result result=om.readValue(response.body().string(), Result.class);
-            System.out.println(result);
-            user = result.getObject();
-            if (result.getObject()==null){
-                Alert message=new Alert(Alert.AlertType.ERROR);
+            Result result = om.readValue(response.body().string(), Result.class);
+
+            if (result.getObject() == null) {
+                Alert message = new Alert(Alert.AlertType.ERROR);
                 message.setHeaderText("Ошибка авторизации");
                 message.setContentText(result.getMessage());
                 message.showAndWait();
-
+            } else if (result.getType().equals(user.getClass().getSimpleName())) {
+                user = gson.fromJson(result.getObject().toString(), user.getClass());
+                System.out.println("user = "+user);
             }
-            System.out.println(user + "userrrr");
-        }else {
+
+        } else {
             System.out.println("Произошла системная ошибка!");
         }
         return user;
+
     }
 }
 

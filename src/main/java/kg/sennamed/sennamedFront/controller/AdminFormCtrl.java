@@ -22,7 +22,7 @@ public class AdminFormCtrl {
     private Button btnGo;
 
     @FXML
-    void onBtnCliced(ActionEvent event) throws IOException {
+    void onBtnClicked(ActionEvent event) throws IOException {
         if (event.getSource().equals(btnGo)) {
             onGoButtonClicked();
         }
@@ -33,18 +33,19 @@ public class AdminFormCtrl {
 //
         if (cmbxDic.getSelectionModel().getSelectedItem().equals(Dictionaries.CUSTOMERS)) {
             path = "/layout/CustomerManagementForm.fxml";
-            btnGo.getScene().getWindow().hide();
-            stageService.showForm(stageService.getStage().getTitle(), path);
+            //btnGo.getScene().getWindow().hide();
+            stageService.showForm(stageService.getAdminStage().getTitle(), path);
+
         }
         if (cmbxDic.getSelectionModel().getSelectedItem().equals(Dictionaries.USERS)) {
             path = "/layout/UserManagementForm.fxml";
-            btnGo.getScene().getWindow().hide();
-            stageService.showForm(stageService.getStage().getTitle(), path);
+           // btnGo.getScene().getWindow().hide();
+            stageService.showForm(stageService.getAdminStage().getTitle(), path);
         }
         if (cmbxDic.getSelectionModel().getSelectedItem().equals(Dictionaries.POSITIONS)) {
             path = "/layout/PositionForm.fxml";
-            btnGo.getScene().getWindow().hide();
-            stageService.showForm(stageService.getStage().getTitle(), path);
+            //btnGo.getScene().getWindow().hide();
+            stageService.showForm(stageService.getAdminStage().getTitle(), path);
         }
     }
 
