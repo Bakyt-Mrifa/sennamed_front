@@ -39,7 +39,7 @@ public class AdminFormCtrl {
         }
         if (cmbxDic.getSelectionModel().getSelectedItem().equals(Dictionaries.USERS)) {
             path = "/layout/UserManagementForm.fxml";
-           // btnGo.getScene().getWindow().hide();
+            // btnGo.getScene().getWindow().hide();
             stageService.showForm(stageService.getAdminStage().getTitle(), path);
         }
         if (cmbxDic.getSelectionModel().getSelectedItem().equals(Dictionaries.POSITIONS)) {

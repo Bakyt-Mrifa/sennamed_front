@@ -2,39 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a862988-ae90-4f20-90db-57c7d4ee644a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/enums/CustomerStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/MainFormCtrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/layout/AdminForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout/AdminForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/layout/PositionForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout/PositionForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/AdminFormCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/AdminFormCtrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/LoginCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/LoginCtrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/MainFormCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/MainFormCtrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/layout/PositionEditForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout/PositionEditForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/MainFormCtrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/PositionCtrl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/PositionCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/PositionCtrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/PositionEditCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/PositionEditCtrl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/UserFormCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/controller/UserFormCtrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/helper/helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/helper/helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/LoginHttpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/LoginHttpRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/HttpRequests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/HttpRequests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/PositionHttpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/PositionHttpRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/enums/Dictionaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/enums/Dictionaries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/enums/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/models/enums/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/services/StageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kg/sennamed/sennamedFront/services/StageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/layout/AdminForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/layout/AdminForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/layout/PositionForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/layout/PositionForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/layout/PositionEditForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/layout/PositionEditForm.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,8 +45,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="17">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,46 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1865#1866#0" expanded="true" />
-                <element signature="e#1914#1915#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="484">
+              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,7 +96,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="612">
               <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,29 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Result.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="104">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,6 +154,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>param</find>
+      <find>Ошибка за</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/layout/UserForm.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/layout/MainForm.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/MainFormCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/LoginHttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/responses/Responses.java" />
@@ -209,19 +184,21 @@
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/enums/Dictionaries.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/AdminServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/enums/CustomerStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java" />
       </list>
     </option>
   </component>
@@ -244,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,6 +337,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -368,7 +345,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../testProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -412,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kg.sennamed.sennamedFront.Main" />
       <module name="sennamed_front" />
@@ -426,9 +403,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PositionCtrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sennamed_front" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kg.sennamed.sennamedFront.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kg.sennamed.sennamedFront.controller" />
+      <option name="MAIN_CLASS_NAME" value="kg.sennamed.sennamedFront.controller.PositionCtrl" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionCtrl.refresh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sennamed_front" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kg.sennamed.sennamedFront.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kg.sennamed.sennamedFront.controller" />
+      <option name="MAIN_CLASS_NAME" value="kg.sennamed.sennamedFront.controller.PositionCtrl" />
+      <option name="METHOD_NAME" value="refresh" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionCtrl.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sennamed_front" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kg.sennamed.sennamedFront.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kg.sennamed.sennamedFront.controller" />
+      <option name="MAIN_CLASS_NAME" value="kg.sennamed.sennamedFront.controller.PositionCtrl" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionHttpRequestImpl.testGetList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sennamed_front" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kg.sennamed.sennamedFront.http.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kg.sennamed.sennamedFront.http.impl" />
+      <option name="MAIN_CLASS_NAME" value="kg.sennamed.sennamedFront.http.impl.PositionHttpRequestImpl" />
+      <option name="METHOD_NAME" value="testGetList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PositionHttpRequestImpl.testGetList" />
+        <item itemvalue="JUnit.PositionCtrl.testGet" />
+        <item itemvalue="JUnit.PositionCtrl" />
+        <item itemvalue="JUnit.PositionCtrl.refresh" />
       </list>
     </recent_temporary>
   </component>
@@ -450,18 +494,51 @@
       <workItem from="1621221159846" duration="17502000" />
       <workItem from="1628565032979" duration="22197000" />
       <workItem from="1629522310917" duration="283000" />
-      <workItem from="1629883555322" duration="62749000" />
+      <workItem from="1629883555322" duration="62908000" />
+      <workItem from="1630898642525" duration="20675000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PositionCtrl - 2021.09.06 at 10h 50m 48s.xml">
+      <configuration name="PositionCtrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 10h 52m 15s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl - 2021.09.06 at 10h 59m 20s.xml">
+      <configuration name="PositionCtrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 01m 56s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 03m 06s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 44m 28s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 44m 40s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 53m 23s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionCtrl_testGet - 2021.09.06 at 11h 55m 40s.xml">
+      <configuration name="PositionCtrl.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PositionHttpRequestImpl_testGetList - 2021.09.06 at 11h 57m 46s.xml">
+      <configuration name="PositionHttpRequestImpl.testGetList" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137413000" />
+    <option name="totallyTimeSpent" value="158247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -475,7 +552,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3136033" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31310943" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
@@ -507,7 +584,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3136033" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31310943" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
@@ -542,23 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/MainFormCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar!/com/squareup/okhttp/Request.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -568,48 +628,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/responses/Responses.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/UserManagementForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/CustomerManagementForm.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/UserEditForm.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/PositionEditForm.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/CustomerViewForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/CustomerEditForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/CustomerHistoryViewForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/enums/Role.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,44 +679,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/PositionForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/AdminServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/AdminServices.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/impl/LoginServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/LoginService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/AdminForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/enums/Dictionaries.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -665,38 +704,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/layout/AuthForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar!/com/fasterxml/jackson/databind/exc/UnrecognizedPropertyException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,23 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/LoginHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -762,16 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -779,20 +771,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="323">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/MainFormCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/LoginHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/PositionHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/control/Alert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/jsse.jar!/sun/security/ssl/Alerts.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/models/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/UserFormCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -801,8 +841,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/PositionHttpRequestImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="535">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/impl/LoginHttpRequestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/LoginCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -812,17 +894,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/http/HttpRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/AdminFormCtrl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionEditCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="195">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,22 +913,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/controller/PositionCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="104">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/sennamed/sennamedFront/services/StageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1914#1915#0" expanded="true" />
           </folding>
         </state>
       </provider>

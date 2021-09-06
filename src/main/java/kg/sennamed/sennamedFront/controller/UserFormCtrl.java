@@ -56,13 +56,10 @@ public class UserFormCtrl {
     @FXML
     void onMnItemClicked(ActionEvent event) throws IOException {
         if (event.getSource().equals(mnItemAdd)) {
-            //System.out.println("Clicked Add");
             addNewUser();
         } else if (event.getSource().equals(mnItemEdit)) {
-            //System.out.println("Clicked Edit");
             editCurrentUser();
         } else if (event.getSource().equals(mnItemDict)) {
-            //  editCurrentUser();
             showPositionForm();
         }
     }

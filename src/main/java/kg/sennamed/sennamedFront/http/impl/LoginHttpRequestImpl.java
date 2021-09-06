@@ -2,7 +2,6 @@ package kg.sennamed.sennamedFront.http.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.squareup.okhttp.*;
 import javafx.scene.control.Alert;
 import kg.sennamed.sennamedFront.http.LoginHttpRequest;
@@ -16,6 +15,7 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
     Gson gson = new Gson();
     private ObjectMapper om = new ObjectMapper();
     private OkHttpClient okHttpClient = new OkHttpClient();
+
 
     @Override
     public User getUser(String login, String password) throws IOException {
@@ -73,7 +73,7 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
                 message.showAndWait();
             } else if (result.getType().equals(user.getClass().getSimpleName())) {
                 user = gson.fromJson(result.getObject().toString(), user.getClass());
-                System.out.println("user = "+user);
+                System.out.println("user = " + user);
             }
 
         } else {
@@ -82,5 +82,6 @@ public class LoginHttpRequestImpl implements LoginHttpRequest {
         return user;
 
     }
+
 }
 

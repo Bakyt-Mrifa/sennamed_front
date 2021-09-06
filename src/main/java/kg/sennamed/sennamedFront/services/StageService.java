@@ -1,17 +1,20 @@
 package kg.sennamed.sennamedFront.services;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import kg.sennamed.sennamedFront.controller.PositionCtrl;
+import javafx.stage.WindowEvent;
+import kg.sennamed.sennamedFront.controller.PositionEditCtrl;
+import kg.sennamed.sennamedFront.models.Position;
 
 import java.io.IOException;
 
 public class StageService {
     private static Stage stage = new Stage();
     private static Stage adminStage = new Stage();
+    private static Stage testStage = new Stage();
 
     public static Stage getStage() {
         return stage;
@@ -20,6 +23,11 @@ public class StageService {
     public static Stage getAdminStage() {
         return adminStage;
     }
+
+    public static Stage getTestStage() {
+        return testStage;
+    }
+
 
     public void showForm(String userName, String path) { // /layout/MainForm.fxml
         try {
@@ -44,24 +52,26 @@ public class StageService {
         }
     }
 
-    private void showTestForm(String titleName, String path) {
+    public void showTestForm(String titleName, String path) {
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(path));
             loader.load();
-            stage.setScene(new Scene(loader.getRoot()));
-            PositionCtrl controller = loader.getController();
-            controller.initData(stage, new Users());
-            stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            testStage.setScene(new Scene(loader.getRoot()));
+            PositionEditCtrl controller = loader.getController();
+            controller.initData(stage,new Position());
+            testStage.setTitle(titleName);
+            testStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
                 public void handle(WindowEvent event) {
-                    refresh();
+//                    refresh();
+                    System.out.println("Stage closed!");
                 }
             });
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        stage.show();
+        testStage.show();
     }
 }

@@ -6,7 +6,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import kg.sennamed.sennamedFront.http.HttpRequests;
+import kg.sennamed.sennamedFront.http.PositionHttpRequest;
 import kg.sennamed.sennamedFront.models.Position;
 import kg.sennamed.sennamedFront.services.StageService;
 
@@ -15,16 +17,20 @@ import java.util.List;
 import java.util.Optional;
 
 public class PositionCtrl {
+    private Stage stage;
+    private Position position;
     private String path;
     private StageService stageService = new StageService();
-    private int serialNum=0;
-    private HttpRequests httpRequests;
+    private int serialNum = 0;
+    private HttpRequests httpRequests = new HttpRequests();
+    private PositionHttpRequest positionHttpRequest;
+
 
     @FXML
     private TableView<Position> tbPoston;
 
-    @FXML   
-    private TableColumn<Integer,Integer> colmSN;
+    @FXML
+    private TableColumn<Integer, Integer> colmSN;
 
     @FXML
     private TableColumn<Position, String> colmPosition;
@@ -46,58 +52,82 @@ public class PositionCtrl {
 
     @FXML
     void OnBtnClicked(ActionEvent event) throws IOException {
-        if (event.getSource().equals(btnAdd)){
+        if (event.getSource().equals(btnAdd)) {
             addNewPosition();
-        } else if (event.getSource().equals(btnEdit)){
+        } else if (event.getSource().equals(btnEdit)) {
             editCurrentPosition();
-        }else if (event.getSource().equals(btnRemove)){
+        } else if (event.getSource().equals(btnRemove)) {
             removePosition();
         }
     }
 
 
-
     private void removePosition() {
-        ButtonType buttonTypeYes=new ButtonType("Да");
-        ButtonType buttonTypeNo=new ButtonType("Отмена", ButtonBar.ButtonData.CANCEL_CLOSE);
-        if (tbPoston.getSelectionModel().getSelectedItem()!=null){
-            Alert message=new Alert(Alert.AlertType.CONFIRMATION);
+        ButtonType buttonTypeYes = new ButtonType("Да");
+        ButtonType buttonTypeNo = new ButtonType("Отмена", ButtonBar.ButtonData.CANCEL_CLOSE);
+        if (tbPoston.getSelectionModel().getSelectedItem() != null) {
+            Alert message = new Alert(Alert.AlertType.CONFIRMATION);
             message.setTitle("Внимание!!!");
             message.setHeaderText("Действительно хотите удалить?");
             message.setContentText("Подтвердите действие - \"удалить должность?\"");
-            message.getButtonTypes().setAll(buttonTypeYes,buttonTypeNo);
-            Optional<ButtonType> result=message.showAndWait();
-            if (result.get()==buttonTypeYes){
+            message.getButtonTypes().setAll(buttonTypeYes, buttonTypeNo);
+            Optional<ButtonType> result = message.showAndWait();
+            if (result.get() == buttonTypeYes) {
                 tbPoston.getItems().removeAll(tbPoston.getSelectionModel().getSelectedItem());
-            }else {
+            } else {
                 System.out.println("The event canceled");
             }
         }
 
 
-
-
     }
 
     private void editCurrentPosition() {
+        /*Stage stage=new Stage();
+
+        try {
+            FXMLLoader loader=new FXMLLoader(getClass().getResource(path));
+            loader.load();
+            stage.setScene(new Scene(loader.getRoot()));
+            PositionEditCtrl controller =  loader.getController();
+            controller.initData(stage, new Position());
+            stage.setTitle(stageService.getAdminStage().getTitle());
+            stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent event) {
+                    try {
+                        refresh();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        stage.show();
+    */
     }
 
     private void addNewPosition() {
 
         path = "/layout/PositionEditForm.fxml";
         //btnGo.getScene().getWindow().hide();
-        stageService.showForm(stageService.getAdminStage().getTitle(), path);
-    }
+        stageService.showTestForm(stageService.getAdminStage().getTitle(), path);
+        }
+
 
     @FXML
     void initialize() throws IOException {
+
 
         colmSN.setCellValueFactory(new PropertyValueFactory<>("id"));
         colmPosition.setCellValueFactory(new PropertyValueFactory<>("position"));
         colmSpeciality.setCellValueFactory(new PropertyValueFactory<>("speciality"));
         colmActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
 
-        tbPoston.setRowFactory(param -> new TableRow<Position>(){
+        /*tbPositon.setRowFactory(param -> new TableRow<Position>(){
             protected void updateItem(Position item, boolean empty) {
                 super.updateItem(item, empty);
                 if (empty || item == null) {
@@ -114,14 +144,18 @@ public class PositionCtrl {
         });
 
 
-
+*/
         refresh();
     }
+
     private void refresh() throws IOException {
- /*       List<Position> positionList = (List<Position>) httpRequests.getRequests("position/getList").getObject();
+        List<Position> positionList = positionHttpRequest.INSTACNE.getPositionList();
+        System.out.println("init Data: "+positionList);
         ObservableList<Position> observableList = FXCollections.observableList(positionList);
+
         tbPoston.setItems(observableList);
-    */}
+
+    }
 
 
 }
