@@ -30,7 +30,7 @@ public class PositionCtrl {
     private TableView<Position> tbPoston;
 
     @FXML
-    private TableColumn<Integer, Integer> colmSN;
+    private TableColumn<Integer, Long> colmSN;
 
     @FXML
     private TableColumn<Position, String> colmPosition;
@@ -62,7 +62,7 @@ public class PositionCtrl {
     }
 
 
-    private void removePosition() {
+    private void removePosition() throws IOException {
         ButtonType buttonTypeYes = new ButtonType("Да");
         ButtonType buttonTypeNo = new ButtonType("Отмена", ButtonBar.ButtonData.CANCEL_CLOSE);
         if (tbPoston.getSelectionModel().getSelectedItem() != null) {
@@ -73,7 +73,11 @@ public class PositionCtrl {
             message.getButtonTypes().setAll(buttonTypeYes, buttonTypeNo);
             Optional<ButtonType> result = message.showAndWait();
             if (result.get() == buttonTypeYes) {
-                tbPoston.getItems().removeAll(tbPoston.getSelectionModel().getSelectedItem());
+                System.out.println("Deleted: "+tbPoston.getSelectionModel().getSelectedItem());
+               Position posit=new Position();
+                posit=tbPoston.getSelectionModel().getSelectedItem();
+                System.out.println(posit);
+                positionHttpRequest.INSTANCE.removePosition(posit);
             } else {
                 System.out.println("The event canceled");
             }
@@ -83,31 +87,7 @@ public class PositionCtrl {
     }
 
     private void editCurrentPosition() {
-        /*Stage stage=new Stage();
 
-        try {
-            FXMLLoader loader=new FXMLLoader(getClass().getResource(path));
-            loader.load();
-            stage.setScene(new Scene(loader.getRoot()));
-            PositionEditCtrl controller =  loader.getController();
-            controller.initData(stage, new Position());
-            stage.setTitle(stageService.getAdminStage().getTitle());
-            stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-                @Override
-                public void handle(WindowEvent event) {
-                    try {
-                        refresh();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        stage.show();
-    */
     }
 
     private void addNewPosition() {
@@ -125,8 +105,10 @@ public class PositionCtrl {
         colmSN.setCellValueFactory(new PropertyValueFactory<>("id"));
         colmPosition.setCellValueFactory(new PropertyValueFactory<>("position"));
         colmSpeciality.setCellValueFactory(new PropertyValueFactory<>("speciality"));
-        colmActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
+        colmActive.setCellValueFactory(new PropertyValueFactory<>("active"));
+        ObservableList <Position> observableList=FXCollections.observableArrayList(positionHttpRequest.INSTANCE.getPositionList());
 
+        tbPoston.setItems(observableList);
         /*tbPositon.setRowFactory(param -> new TableRow<Position>(){
             protected void updateItem(Position item, boolean empty) {
                 super.updateItem(item, empty);
@@ -145,16 +127,15 @@ public class PositionCtrl {
 
 
 */
-        refresh();
+        //refresh();
     }
 
     private void refresh() throws IOException {
-        List<Position> positionList = positionHttpRequest.INSTACNE.getPositionList();
+        List<Position> positionList = positionHttpRequest.INSTANCE.getPositionList();
         System.out.println("init Data: "+positionList);
         ObservableList<Position> observableList = FXCollections.observableList(positionList);
-
+        System.out.println("OL: "+observableList);
         tbPoston.setItems(observableList);
-
     }
 
 

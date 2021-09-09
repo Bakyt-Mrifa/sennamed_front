@@ -9,8 +9,9 @@ import java.util.List;
 
 public interface PositionHttpRequest {
 
-    PositionHttpRequest INSTACNE = new PositionHttpRequestImpl();
+    PositionHttpRequest INSTANCE = new PositionHttpRequestImpl();
     void savePosition (Position position) throws IOException;
+    void removePosition (Position position) throws IOException;
     Position editPosition (Position position) throws IOException;
     List<Position> getPositionList() throws IOException;
 

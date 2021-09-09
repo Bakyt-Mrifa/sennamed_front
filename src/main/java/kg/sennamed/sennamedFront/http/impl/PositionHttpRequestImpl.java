@@ -23,6 +23,11 @@ public class PositionHttpRequestImpl implements PositionHttpRequest {
         result = httpRequests.postRequests(position, link);
     }
 
+    @Override
+    public void removePosition(Position position) throws IOException {
+        link = "position/remove";
+        result = httpRequests.postRequests(position, link);
+    }
 
 
     @Override

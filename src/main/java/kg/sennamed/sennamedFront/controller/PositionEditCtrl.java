@@ -59,7 +59,7 @@ public class PositionEditCtrl {
         position.setPosition(positionName);
         position.setSpeciality(speciality);
         position.setActive(active);
-        positionHttpRequest.INSTACNE.savePosition(position);
+        positionHttpRequest.INSTANCE.savePosition(position);
 
         clearFields();
     }
@@ -79,6 +79,7 @@ public class PositionEditCtrl {
         txtPosition.clear();
         txtSpeciality.clear();
         chbxActive.setSelected(false);
+        txtPosition.requestFocus();
     }
 
 }

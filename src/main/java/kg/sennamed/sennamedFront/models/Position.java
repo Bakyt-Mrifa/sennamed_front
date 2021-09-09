@@ -8,6 +8,6 @@ public class Position {
     private Long id;
     private String position;
     private String speciality;
-    private boolean isActive;
+    private boolean active;
 
 }
