@@ -1,5 +1,6 @@
 package kg.sennamed.sennamedFront.controller;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import kg.sennamed.sennamedFront.models.User;
 
@@ -123,11 +125,13 @@ public class UserFormCtrl {
         }
 
         stage.show();
+    }*/
     }
-
     @FXML
     void initialize() {
-
+            initData();
+        }
+/*
         colmId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colmName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colmLogin.setCellValueFactory(new PropertyValueFactory<>("login"));
@@ -151,12 +155,22 @@ public class UserFormCtrl {
             }
         });
 
-
-
-        refresh();
+      refresh();
+      }
     */
+
+
+    private void initTableView() throws IOException {
+
     }
 
+    private void initData() {
+        colmId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colmName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        colmLogin.setCellValueFactory(new PropertyValueFactory<>("login"));
+        colmPwd.setCellValueFactory(new PropertyValueFactory<>("pwd"));
+        colmActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
+    }
     private void refresh() {
              /*   AdminServices adminServices = new AdminServicesImpl();
                 List<Users> list = adminServices.findUsers();

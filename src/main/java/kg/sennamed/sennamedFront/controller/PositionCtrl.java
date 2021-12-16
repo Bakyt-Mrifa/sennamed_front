@@ -1,5 +1,6 @@
 package kg.sennamed.sennamedFront.controller;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,9 +10,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import kg.sennamed.sennamedFront.http.HttpRequests;
 import kg.sennamed.sennamedFront.http.PositionHttpRequest;
+
 import kg.sennamed.sennamedFront.models.Position;
 import kg.sennamed.sennamedFront.services.StageService;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
@@ -74,8 +75,7 @@ public class PositionCtrl {
             Optional<ButtonType> result = message.showAndWait();
             if (result.get() == buttonTypeYes) {
                 System.out.println("Deleted: "+tbPoston.getSelectionModel().getSelectedItem());
-               Position posit=new Position();
-                posit=tbPoston.getSelectionModel().getSelectedItem();
+               Position posit=tbPoston.getSelectionModel().getSelectedItem();
                 System.out.println(posit);
                 positionHttpRequest.INSTANCE.removePosition(posit);
             } else {
@@ -101,14 +101,13 @@ public class PositionCtrl {
     @FXML
     void initialize() throws IOException {
 
+        initData();
+        initTableView();
 
-        colmSN.setCellValueFactory(new PropertyValueFactory<>("id"));
-        colmPosition.setCellValueFactory(new PropertyValueFactory<>("position"));
-        colmSpeciality.setCellValueFactory(new PropertyValueFactory<>("speciality"));
-        colmActive.setCellValueFactory(new PropertyValueFactory<>("active"));
-        ObservableList <Position> observableList=FXCollections.observableArrayList(positionHttpRequest.INSTANCE.getPositionList());
 
-        tbPoston.setItems(observableList);
+       /*ObservableList <Position> observableList=FXCollections.observableArrayList(positionHttpRequest.INSTANCE.getPositionList());
+
+        tbPoston.setItems(observableList);*/
         /*tbPositon.setRowFactory(param -> new TableRow<Position>(){
             protected void updateItem(Position item, boolean empty) {
                 super.updateItem(item, empty);
@@ -130,7 +129,20 @@ public class PositionCtrl {
         //refresh();
     }
 
-    private void refresh() throws IOException {
+    public void initTableView() throws IOException {
+        List <Position> positions=FXCollections.observableArrayList(positionHttpRequest.INSTANCE.getPositionList());
+        tbPoston.setItems(FXCollections.observableArrayList(positions));
+        System.out.println(positions);
+    }
+
+    private void initData() {
+        colmSN.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colmPosition.setCellValueFactory(new PropertyValueFactory<>("position"));
+        colmSpeciality.setCellValueFactory(new PropertyValueFactory<>("speciality"));
+        colmActive.setCellValueFactory(new PropertyValueFactory<>("active"));
+    }
+
+    public void refresh() throws IOException {
         List<Position> positionList = positionHttpRequest.INSTANCE.getPositionList();
         System.out.println("init Data: "+positionList);
         ObservableList<Position> observableList = FXCollections.observableList(positionList);

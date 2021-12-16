@@ -62,6 +62,8 @@ public class PositionEditCtrl {
         positionHttpRequest.INSTANCE.savePosition(position);
 
         clearFields();
+        PositionCtrl positionCtrl=new PositionCtrl();
+        positionCtrl.initTableView();
     }
 
 
